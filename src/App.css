@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.no_lm {
+  margin-left: 0 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.myName {
+  background: -webkit-linear-gradient(#008bcc 0, #7c2ae8);
+  font-size: 72px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.component_gap {
+  padding-bottom: 80px;
+}
+
+.upper_gap {
+  padding-top: 80px;
+}
+
+.no-decoration-link {
+  text-decoration: none;
+}
+
+.github_link a {
+  color: #6c00f8;
+}
+
+.borderEffect:hover {
+  -webkit-box-shadow: 0 6px 20px 0 rgba(82, 11, 70, 0.623) !important;
+          box-shadow: 0 6px 20px 0 rgba(82, 11, 70, 0.623) !important;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.myHeading {
+  border-bottom: 5px solid #6c00f8;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.myBtn {
+  background: -webkit-linear-gradient(#008bcc 0, #7c2ae8);
+  padding: 10px 30px;
+  border-radius: 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.myBtn a {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.myBtn:hover {
+  background: white;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.myBtn:hover a {
+  color: #6c00f8;
+}
+
+.offBtn {
+  background: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.offBtn a {
+  color: #6c00f8;
+}
+
+.offBtn:hover {
+  background: -webkit-linear-gradient(#008bcc 0, #7c2ae8);
+  -webkit-transition: 0.3s all linear;
+  transition: 0.3s all linear;
+}
+
+.offBtn:hover a {
+  color: white;
+}
+
+.image_div {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.image_div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.myFooter {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  background: -webkit-linear-gradient(#008bcc 0, #7c2ae8);
+}
+
+.myFooter a {
+  color: black;
+  text-decoration: none;
+}
+
+.profile_img_div {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.profile_img_div img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.social_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social_div h1 {
+  margin: 10px;
+}
+
+.social_div a {
+  color: black;
+}
+
+.social_icon:hover a {
+  color: #6c00f8;
+}
+
+.myNavbar {
+  width: 100%;
+  height: 60px;
+  text-align: center !important;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.myCardNavbar {
+  width: 100%;
+  height: 60px;
+  text-align: center !important;
+  position: fixed;
+  z-index: 1;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+  -webkit-transition-timing-function: 0.3s ease-in;
+          transition-timing-function: 0.3s ease-in;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.myNavbar a {
+  color: black !important;
+  text-decoration: none;
+}
+
+.myNavbar li:hover a {
+  color: #7c2ae8 !important;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.myLogo a {
+  color: #7c2ae8 !important;
+}
+
+.mySideBtn {
+  background: white;
+  color: black !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .myUl {
+    background: -webkit-linear-gradient(#008bcc 0, #7c2ae8);
   }
 }
+
+.myCategoryBtn {
+  background: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #6c00f8;
+  margin-left: 10px;
+}
+
+.myCategoryActiveBtn {
+  background: -webkit-linear-gradient(#008bcc 0, #7c2ae8);
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=App.css.map */

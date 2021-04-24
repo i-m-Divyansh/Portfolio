@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+$primary_Color:#6c00f8;
+
+// $theme_color: -webkit-linear-gradient(#8360c3, #2ebf91); 
+$theme_color: -webkit-linear-gradient(#008bcc 0,#7c2ae8);
+
+
+.no_lm{
+    margin-left: 0 !important;
+}
+
+.myName{
+    background: $theme_color;
+        font-size: 72px;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.component_gap{
+    padding-bottom: 80px;
+}
+
+.upper_gap{
+    padding-top: 80px;
+}
+
+.no-decoration-link{
+    text-decoration: none;
+}
+
+.github_link a{
+    color: $primary_Color;
+}
+
+.borderEffect:hover{
+    box-shadow:  0 6px 20px 0 rgba(82, 11, 70, 0.623) !important;
+    transition: 0.3s all ease;
+}
+
+.myHeading{
+ border-bottom: 5px solid $primary_Color;
+ width:fit-content;
+ margin: auto;
+}
+
+.myBtn{
+    background: $theme_color;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+.myBtn a{
+    color: white;
+}
+
+.myBtn:hover{
+    background: white;
+    transition: 0.3s all; 
+}
+
+.myBtn:hover a{
+    color: $primary_Color;
+}
+
+
+.offBtn{
+    background: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.offBtn a{
+color: $primary_Color;
+}
+
+.offBtn:hover{
+    background: $theme_color;
+    transition: 0.3s all linear;
+}
+
+.offBtn:hover a{
+    color: white;
+}
+
+.image_div{
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.image_div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.myFooter{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background: $theme_color;
+}
+
+.myFooter a{
+    color: black;
+    text-decoration: none;
+}
+
+.profile_img_div{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.profile_img_div img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.social_div{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.social_div h1{
+    margin: 10px;
+}
+
+.social_div a{
+    color: black;
+}
+
+.social_icon:hover a{
+    color:$primary_Color;
+}
+
+.myNavbar{
+    width: 100%;
+    height: 60px;
+    text-align: center!important;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.myCardNavbar{
+    width: 100%;
+    height: 60px;
+    text-align: center!important;
+    position: fixed;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px!important;
+    transition-timing-function: 0.3s ease-in;
+    transition:all 0.5s;
+}
+
+.myCard{
+}
+
+.myNavbar a{
+    color: black!important;
+    text-decoration: none;
+}
+
+.myNavbar li:hover a{
+    color: #7c2ae8!important;
+    transition:0.3s all;
+}
+
+.myLogo a{
+    color: #7c2ae8!important;
+}
+
+.mySideBtn{
+    background: white;
+    color: black!important;
+}
+
+@media only screen and(max-width:600px){
+    .myUl{
+        background: $theme_color;
+    }
+}
+
+.myCategoryBtn{
+    background: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: $primary_Color;
+    margin-left: 10px;
+}
+
+.myCategoryActiveBtn{
+    background: $theme_color;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 10px;
+}
+
+
